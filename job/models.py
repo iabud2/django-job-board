@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 JOB_TYPE = ( 
@@ -25,6 +26,9 @@ class Job(models.Model):
     experience = models.IntegerField(default=1)
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     image = models.ImageField(upload_to=image_upload)
+
+    slug = models.SlugField(blank=True, null=True)
+
     def __str__(self):
         return self.title
     
