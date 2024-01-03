@@ -54,6 +54,7 @@ class Apply(models.Model):
     website = models.URLField(max_length=100)
     cv = models.FileField(upload_to='apply/')
     coverletter = models.TextField(max_length=1500)
+    created_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
