@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'home',
     'blog',
     'django_filters',
-    
+    'rest_framework',    
     'contact',
     'bootstrap5',
 ]
